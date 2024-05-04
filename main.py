@@ -32,8 +32,8 @@ def UsersRecommend(year: int):  #Top 3 de juegos + recomendados en un año (revi
                      {"Puesto 3": result_df.iloc[2]['name']}]
     return response_data
 
-def UsersWorstDeveloper(year: int): #Top 3 de desarrolladoras con juegos - recomendados en un año (reviews.recommend = False y comentarios negativos)
-    df = pd.read_csv('UsersWorstDeveloper.csv')
+def UsersNotRecommend(year: int): #Top 3 de desarrolladoras con juegos - recomendados en un año (reviews.recommend = False y comentarios negativos)
+    df = pd.read_csv('UsersNotRecommend.csv')
     result_df = df[df['year'] == year]
     response_data = [{"Puesto 1": result_df.iloc[0]['developer']},
                     {"Puesto 2": result_df.iloc[1]['developer']},
@@ -128,17 +128,31 @@ async def endpoint_3_Ingrese_un_año(year: str):
         return JSONResponse(status_code=500, content={"error": error_message})
 
 
-@app.get("/UsersWorstDeveloper/{year}", tags=['Top 3 de desarrolladores con juegos - recomendados en un año'])
+@app.get("/UsersNotRecommend/{year}", tags=['Top 3 de juego - recomendados en un año'])
 async def endpoint_4_Ingrese_un_año(year: str):
     try:
         year = int(year)
-        result = UsersWorstDeveloper(year)
-        return result
+
+        if not (2000 <= year <= 2100):
+            error_message = f"El año debe estar en el rango entre 2000 y 2100 {str(e)}"
+            return JSONResponse(status_code=500, content={"error": error_message})
+
+        result = UsersNotRecommend(year)
+
+        if result:
+            return result
+        else:
+            error_message = "No se encontraron recomendaciones para el año {year} {str(e)}"
+            return JSONResponse(status_code=500, content={"error": error_message})
+
     except FileNotFoundError as e:
-        raise HTTPException(status_code=500, detail=f"Error al cargar el archivo UsersWorstDeveloper.csv: {str(e)}")
+        error_message = f"Error al cargar el archivo UsersNotRecommend.csv: {str(e)}"
+        return JSONResponse(status_code=500, content={"error": error_message})
+
     except Exception as e:
-        traceback.print_exc()
-        raise HTTPException(status_code=500, detail=f"Error interno del servidor: {str(e)}")
+        error_message = f"Error interno del servidor: {str(e)}"
+        return JSONResponse(status_code=500, content={"error": error_message})
+
 
 @app.get("/sentiment_analysis/{empresa_desarrolladora}", tags=['Análisis de sentimiento'])
 async def enpoint_5_Ingrese_un_desarrollador(empresa_desarrolladora: str):
