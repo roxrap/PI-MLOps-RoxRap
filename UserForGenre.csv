@@ -1,4 +1,5 @@
 genres,year,user_id,hours_game
+Action,0,rockettwins,1196
 Action,1983,76561197966936422,5
 Action,1984,76561198064710856,1
 Action,1988,DownSyndromeKid,11
@@ -32,6 +33,7 @@ Action,2015,76561198046914681,4518
 Action,2016,76561198071116663,2253
 Action,2017,76561198074736789,3534
 Action,2018,thugnificent,5
+Adventure,0,76561198054840158,5624
 Adventure,1983,76561197966936422,5
 Adventure,1984,76561198064710856,1
 Adventure,1987,76561197967174031,70
@@ -61,7 +63,7 @@ Adventure,2010,76561198065322400,1172
 Adventure,2011,thiefofrosesinlalaland,6159
 Adventure,2012,Evilutional,10588
 Adventure,2013,76561197978756659,4986
-Adventure,2014,76561198054840158,5624
+Adventure,2014,qqmp,4275
 Adventure,2015,idonothack,5558
 Adventure,2016,76561198071116663,2253
 Adventure,2017,76561198074736789,3534
@@ -77,6 +79,7 @@ Audio Production,2013,HappyRussian,277
 Audio Production,2014,Lickidactyl,1831
 Audio Production,2015,nhoqueserbom,17
 Audio Production,2016,FW2912,3
+Casual,0,76561198054840158,5624
 Casual,1983,76561197966936422,5
 Casual,1984,76561198064710856,1
 Casual,1991,76561198056997935,12
@@ -102,7 +105,7 @@ Casual,2010,Gravalanch,2574
 Casual,2011,tsunamitad,10001
 Casual,2012,Evilutional,10588
 Casual,2013,DoctorSpaceman,4035
-Casual,2014,76561198054840158,5624
+Casual,2014,qqmp,4275
 Casual,2015,benjamingarrison,5714
 Casual,2016,76561198071116663,2253
 Casual,2017,76561198096678177,1963
@@ -114,6 +117,7 @@ Design &amp; Illustration,2014,Sky_Wolf,364
 Design &amp; Illustration,2015,ScottyG555,2805
 Design &amp; Illustration,2016,ryanalcock,666
 Design &amp; Illustration,2017,xfluttersx,0
+Early Access,0,AppleNoonga,55
 Early Access,2012,belial2592,1765
 Early Access,2013,76561197978756659,4986
 Early Access,2014,mutatedwombat,4530
@@ -128,6 +132,7 @@ Education,2014,thugnificent,70
 Education,2015,hterrormc,74
 Education,2016,76561197994830976,11
 Education,2017,76561198045638432,31
+Free to Play,0,76561198054840158,5624
 Free to Play,1996,de_reyals,1
 Free to Play,1999,76561198062915082,152
 Free to Play,2001,DownSyndromeKid,48
@@ -141,10 +146,11 @@ Free to Play,2010,76561198030902576,3585
 Free to Play,2011,poedgirl,6808
 Free to Play,2012,Evilutional,10588
 Free to Play,2013,laumir,6778
-Free to Play,2014,76561198054840158,5624
+Free to Play,2014,qqmp,4275
 Free to Play,2015,benjamingarrison,5714
 Free to Play,2016,76561198146831507,1710
 Free to Play,2017,76561198075582003,2447
+Indie,0,berkyjef,2028
 Indie,1988,comquack,127
 Indie,1995,TomThehTmoT,11
 Indie,1996,daedalus-,1
@@ -170,6 +176,7 @@ Indie,2015,benjamingarrison,5714
 Indie,2016,johnvu3,2488
 Indie,2017,76561198074736789,3534
 Indie,2018,thugnificent,5
+Massively Multiplayer,0,76561198054840158,5624
 Massively Multiplayer,2003,shinomegami,8848
 Massively Multiplayer,2007,76561198048927794,704
 Massively Multiplayer,2008,76561198054983134,243
@@ -188,6 +195,7 @@ Photo Editing,2012,robinwalker,25
 Photo Editing,2014,Sky_Wolf,364
 Photo Editing,2015,76561198084906493,3
 Photo Editing,2016,Colidos,125
+RPG,0,76561198054840158,5624
 RPG,1988,comquack,127
 RPG,1992,76561198007165405,14
 RPG,1994,casban,16
@@ -214,6 +222,7 @@ RPG,2015,idonothack,5558
 RPG,2016,76561198071116663,2253
 RPG,2017,76561198074736789,3534
 RPG,2018,76561197994830976,10
+Racing,0,2311985201258745633313,483
 Racing,1994,de_reyals,1
 Racing,1995,Steamified,122
 Racing,1996,jamessnee1,6
@@ -236,6 +245,7 @@ Racing,2014,76561197995725436,1185
 Racing,2015,express157,1987
 Racing,2016,76561198058230663,771
 Racing,2017,76561198070643441,123
+Simulation,0,berkyjef,2028
 Simulation,1987,76561198033986892,1
 Simulation,1988,76561198052912739,0
 Simulation,1989,76561198014848587,64
@@ -274,6 +284,7 @@ Software Training,2014,Lickidactyl,1831
 Software Training,2015,hterrormc,74
 Software Training,2016,thugnificent,6
 Software Training,2017,76561198045638432,31
+Sports,0,AppleNoonga,55
 Sports,1995,Steamified,122
 Sports,2005,76561198087466439,340
 Sports,2006,marshythemarshmallowman,64
@@ -288,6 +299,7 @@ Sports,2014,1silentsniper1,1761
 Sports,2015,express157,1987
 Sports,2016,76561197979956729,1243
 Sports,2017,Steamified,133
+Strategy,0,shinomegami,313
 Strategy,1988,comquack,127
 Strategy,1990,mcdaniel5900,0
 Strategy,1993,shinomegami,366
@@ -315,6 +327,7 @@ Strategy,2014,76561198092362090,2330
 Strategy,2015,idonothack,5558
 Strategy,2016,76561198070892581,1582
 Strategy,2017,smegmyfoodle,1548
+Utilities,0,LoneHamish,114
 Utilities,2006,sbeghen,532
 Utilities,2007,chidvd,50
 Utilities,2008,76561198069614338,17

@@ -26,18 +26,18 @@ def UserForGenre(genero:str):    #Devuelve el usuario con más hs jugadas para u
 
 def UsersRecommend(year: int):  #Top 3 de juegos + recomendados en un año (reviews.recommend=True y comentarios positivos/neutrales)
     df = pd.read_csv('UsersRecommend.csv')
-    result_df = df[df['year'] == year]
-    response_data = [{"Puesto 1": result_df.iloc[0]['name']},
-                     {"Puesto 2": result_df.iloc[1]['name']},
-                     {"Puesto 3": result_df.iloc[2]['name']}]
+    result_df = df[df['fecha'] == year]
+    response_data = [{"Puesto 1": result_df.iloc[0]['app_name']},
+                     {"Puesto 2": result_df.iloc[1]['app_name']},
+                     {"Puesto 3": result_df.iloc[2]['app_name']}]
     return response_data
 
-def UsersNotRecommend(year: int): #Top 3 de desarrolladoras con juegos - recomendados en un año (reviews.recommend = False y comentarios negativos)
+def UsersNotRecommend(year: int): #Top 3 de juegos - recomendados en un año (reviews.recommend = False y comentarios negativos)
     df = pd.read_csv('UsersNotRecommend.csv')
-    result_df = df[df['year'] == year]
-    response_data = [{"Puesto 1": result_df.iloc[0]['developer']},
-                    {"Puesto 2": result_df.iloc[1]['developer']},
-                    {"Puesto 3": result_df.iloc[2]['developer']}]
+    result_df = df[df['fecha'] == year]
+    response_data = [{"Puesto 1": result_df.iloc[0]['app_name']},
+                    {"Puesto 2": result_df.iloc[1]['app_name']},
+                    {"Puesto 3": result_df.iloc[2]['app_name']}]
     return response_data
 
 def sentiment_analysis(empresa_desarrolladora: str): #Lista con la cantidad de reseñas con análisis de sentimiento
