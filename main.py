@@ -40,10 +40,10 @@ def UsersNotRecommend(year: int): #Top 3 de juegos - recomendados en un año (re
                     {"Puesto 3": result_df.iloc[2]['app_name']}]
     return response_data
 
-def sentiment_analysis(empresa_desarrolladora: str): #Lista con la cantidad de reseñas con análisis de sentimiento
+def sentiment_analysis(year: int): #Lista con la cantidad de reseñas con análisis de sentimiento
     df = pd.read_csv('sentiment_analysis.csv')
-    result_df = df[df['developer'] == empresa_desarrolladora]
-    response_data = result_df.set_index('developer').to_dict(orient='index')
+    result_df = df[df['release_year'] == year]
+    response_data = result_df.set_index('release_year').to_dict(orient='index')
     return response_data
 
 def recomendacion_usuario(item_id): #Devuelve lista con 5 juegos recomendados para un usuario
@@ -154,10 +154,10 @@ async def endpoint_4_Ingrese_un_año(year: str):
         return JSONResponse(status_code=500, content={"error": error_message})
 
 
-@app.get("/sentiment_analysis/{empresa_desarrolladora}", tags=['Análisis de sentimiento'])
-async def enpoint_5_Ingrese_un_desarrollador(empresa_desarrolladora: str):
+@app.get("/sentiment_analysis/{year}", tags=['Análisis de sentimiento'])
+async def enpoint_5_Ingrese_un_año(year: int):
     try:
-        result = sentiment_analysis(empresa_desarrolladora)
+        result = sentiment_analysis(year)
         return result
     except FileNotFoundError as e:
         raise HTTPException(status_code=500, detail=f"Error al cargar el archivo sentiment_analysis.csv: {str(e)}")
