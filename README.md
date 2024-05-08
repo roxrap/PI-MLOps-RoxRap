@@ -13,7 +13,7 @@ El objetivo principal de este proyecto es aplicar el ciclo de vida completo de u
 
 
 ## 1. Ingeniería de Datos (ETL y API)
-1.1 Transformaciones de Datos: Se realizaron transformaciones en conjuntos de datos proporcionados en formato JSON para cargarlos adecuadamente. Esto incluyó la limpieza y procesamiento de datos para optimizar el rendimiento de la API y el entrenamiento del modelo.
+1.1 Transformaciones de Datos: Se realizaron transformaciones en conjuntos de datos proporcionados en formato JSON para cargarlos adecuadamente. Esto incluyó la limpieza y procesamiento de datos para optimizar el rendimiento de la API y el entrenamiento del modelo. ([Datasets original](https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj))
 <br />
 1.2 Feature Engineering: Se aplicó análisis de sentimiento a las reseñas de usuarios utilizando NLTK (Natural Language Toolkit) para generar una columna adicional de polaridad de sentimiento.
 <br />
@@ -26,7 +26,7 @@ Se investigaron relaciones entre variables, se identificaron outliers y se explo
 Se desarrolló un modelo de recomendación de videojuegos utilizando el enfoque ítem-ítem basado en similitud del coseno. El modelo recomienda juegos similares en base a un juego dado, utilizando vectores de características generados a partir de descripciones de juegos.
 
 ## 4. Implementación de MLOps
-Se desplegó el modelo de recomendación como parte de la API utilizando Render. Esto permite a los usuarios finales realizar consultas y recibir recomendaciones personalizadas. https://drive.google.com/file/d/144l6uIzRsUOXVGb2NkSnGDArGutwznJw/view?usp=drive_link
+Se desplegó el modelo de recomendación como parte de la API utilizando Render. Esto permite a los usuarios finales realizar consultas y recibir recomendaciones personalizadas. [Video](https://drive.google.com/file/d/144l6uIzRsUOXVGb2NkSnGDArGutwznJw/view?usp=drive_link)
 
 ### Contacto
 Para cualquier consulta o sugerencia sobre el proyecto, puedes contactarme:
